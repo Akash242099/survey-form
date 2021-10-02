@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="survey.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index1.js"></script>
+</head>
+
+<body>
+
+    <h1>SURVEY FORM</h1>
+    <div class="my_div uk-card uk-card-default uk-card-body">
+    
+        <div class="text">
+            <label for="you">Name:</label>
+        </div>
+        <div>
+            <input class="uk-input uk-form-width-medium" id="sname" type="text" placeholder="Enter name"
+                name="myName"><span class="error_form" id="sname_error_message"></span>
+        </div>
+        <!-- <span class="error_form" id="sname_error_message"></span> -->
+        <br>
+        <div class="text">
+            <label for="you">Email:</label>
+        </div>
+        <div>
+            <input class="uk-input uk-form-width-medium" id="semail" type="email" placeholder="Enter email"
+                name="myEmail">
+            <span class="error_form" id="semail_error_message"></span>
+        </div>
+        <br>
+        <div class="text">
+            <label for="you">Phone Number:</label>
+        </div>
+        <div>
+            <input class="uk-input uk-form-width-medium" id="snumber" type="tel" placeholder="Enter phone number"
+                name="myPhoneNumber">
+            <span class="error_form" id="snumber_error_message"></span>
+        </div>
+        <br>
+
+        <div class="uk-margin">
+            <div uk-form-custom="target: > * > span:first-child">
+                <label for="profession"> Which option best describe your current role: </label>
+                <select>
+                    <option value="">Please select....</option>
+                    <option value="Stu">Student</option>
+                    <option value="BUI">Buisness Man</option>
+                    <option value="Pro">Professional</option>
+                </select>
+                <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="uk-margin">
+            How likely is that you recommend mapline to your friend:
+            <div class="uk-form-controls uk-form-controls-text">
+                <label><input class="uk-radio" type="radio" name="recomend"> Definetly</label><br>
+                <label><input class="uk-radio" type="radio" name="recomend"> May be</label><br>
+                <label><input class="uk-radio" type="radio" name="recomend"> Not sure</label><br>
+
+            </div>
+        </div>
+        <br>
+        <div>
+            Intrest area:
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label><input class="uk-checkbox" type="checkbox" checked> Web development</label>
+                <label><input class="uk-checkbox" type="checkbox" checked> Management</label>
+                <label><input class="uk-checkbox" type="checkbox"> ML</label>
+            </div>
+        </div>
+        <br>
+        <div><label for="you">Few words about yourself:</label> </div>
+        <div class="uk-margin">
+            <textarea class="uk-textarea" rows="1" placeholder="Write about yourself"> </textarea>
+            <span class="error_form" id="stext_error_message"></span>
+        </div>
+        <br>
+        <div>
+            <button id="my_button" class="uk-button uk-button-primary">Submit</button>
+            <button id="my_cancle" class="uk-button uk-button-danger">Cancle button</button>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
